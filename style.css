@@ -11,10 +11,6 @@
   font-style: normal;
   
 }
-*{
-    margin:0px;
-    padding: 0;
-}
 
 
 /* header start */
@@ -244,13 +240,20 @@ main{
 }
 .join-bg{
     margin-top: 120px;
+    width: 100vw; 
+    height: auto;
+    text-align: center;
     background-image: url('assets/news-letter-bg.png');
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 .join{
-    text-align: center;
-    padding:199px 305px 193px 305px;
+    width: 50vw;
+    padding:193px 305px 193px 305px;
+    margin:0 auto;
     
 }
 .join h2{
@@ -262,10 +265,9 @@ form{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 23px;
    width: 830px;
    height: 50px;
-   
+   margin:23px auto;
 
 }
 form input[type="email"]{
@@ -284,7 +286,8 @@ form input[type="submit"]{
     color:white;
     background-color: #E95A08;
     border:none;
-}
+} 
+
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -321,7 +324,7 @@ footer{
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) and (min-width:100px){
     
     header{
         margin:16px;
@@ -366,12 +369,17 @@ footer{
     .first-layout{
         flex-direction: column;
         margin-top: 51px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
     .bloom img , .ana img , .zabo img{
         width: 500px;
         height: 252px;
-        margin: 0 16px 20px 16px;
+         margin: 0 16px 20px 16px;
         border-radius: 15px;
+        object-fit: cover;
     }
     .p-des h2{
         font-size: 20px;
@@ -387,9 +395,7 @@ footer{
 }
 .join-bg{
     margin-top: 44px;
-    background-image: url('assets/news-letter-bg.png');
-    background-repeat: no-repeat;
-    width: 100%;
+    width: 590px;
 }
 .join{
     padding:110px 36px 63px 36px;
