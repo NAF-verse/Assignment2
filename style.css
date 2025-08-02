@@ -152,9 +152,16 @@ main{
     margin-top: 210px;
     gap: 60px;
 }
-.shop-img{
+.store{
     width: 100%;
     
+}
+.badge{
+    width: 350px;
+    height: 350px;
+    position:relative;
+    top:-80%;
+    right:-55%;
 }
 .shop-des{
     padding:38px 0;
@@ -170,7 +177,7 @@ main{
     margin:20px 0;
 }
 .latest{
-    margin-top: 133px;
+    margin-top: -250px;
 }
 
 .latest-title{
@@ -365,6 +372,12 @@ footer{
         flex-direction: column;
         margin:41px 15px 0 15px;
         gap:18px;
+    }
+    .badge{
+        display: none;
+    }
+    .latest{
+        margin-top: 80px;
     }
     
     .latest p, .our-plants p{
