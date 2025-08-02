@@ -287,7 +287,9 @@ form input[type="submit"]{
     background-color: #E95A08;
     border:none;
 } 
+/* main end */
 
+/* footer start */
 footer{
     display: flex;
     justify-content: space-evenly;
@@ -322,9 +324,11 @@ footer{
     transform: scale(1.3);
 }
 
+/* footer end */
 
 
-@media screen and (max-width:600px) and (min-width:100px){
+/* Responsive for mobile */
+@media screen and (max-width:600px){
     
     header{
         margin:16px;
